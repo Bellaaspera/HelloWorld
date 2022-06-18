@@ -18,11 +18,46 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZU-Bj-kDO">
                                 <rect key="frame" x="30" y="337" width="315" height="310"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q9-It-a5a">
+                                        <rect key="frame" x="63.5" y="135" width="188" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="dnb-1u-CKT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Greeting">
+                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="greetingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3r-kZ-FRb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50168247929518384" green="0.7803921568627451" blue="0.75280594822025126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7Q9-It-a5a" secondAttribute="bottom" constant="139" id="Mnh-Oa-U5u"/>
+                                    <constraint firstItem="7Q9-It-a5a" firstAttribute="centerX" secondItem="FZU-Bj-kDO" secondAttribute="centerX" id="Z24-bh-QvV"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNw-vh-3pp">
                                 <rect key="frame" x="30" y="17" width="315" height="310"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2a-El-eLV">
+                                        <rect key="frame" x="18" y="101" width="290" height="108"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="37"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstItem="W2a-El-eLV" firstAttribute="top" secondItem="UNw-vh-3pp" secondAttribute="top" constant="101" id="PfA-fV-hxy"/>
+                                    <constraint firstAttribute="trailing" secondItem="W2a-El-eLV" secondAttribute="trailing" constant="7" id="Xnm-zJ-V4y"/>
+                                    <constraint firstItem="W2a-El-eLV" firstAttribute="leading" secondItem="UNw-vh-3pp" secondAttribute="leading" constant="18" id="b6Q-B0-ALe"/>
+                                    <constraint firstAttribute="bottom" secondItem="W2a-El-eLV" secondAttribute="bottom" constant="101" id="vQk-H8-fnq"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -38,18 +73,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZU-Bj-kDO" secondAttribute="trailing" constant="30" id="vRX-wp-m7H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="7Q9-It-a5a" id="uJs-Nk-ZKi"/>
+                        <outlet property="greetingLabel" destination="W2a-El-eLV" id="qrV-zl-7aP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="55.580357142857139"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="55.322338830584712"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
