@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,29 +13,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZU-Bj-kDO">
-                                <rect key="frame" x="33" y="455.5" width="351" height="386.5"/>
+                                <rect key="frame" x="74" y="180.66666666666663" width="664" height="153.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNw-vh-3pp">
-                                <rect key="frame" x="33" y="61" width="351" height="386.5"/>
+                                <rect key="frame" x="74" y="17" width="664" height="153.66666666666666"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="7oi-qg-G3X"/>
-                            <constraint firstItem="UNw-vh-3pp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="GAf-kt-gWA"/>
-                            <constraint firstItem="UNw-vh-3pp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="MoT-vl-mFb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FZU-Bj-kDO" secondAttribute="bottom" constant="20" id="a6u-MZ-D1n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UNw-vh-3pp" secondAttribute="trailing" constant="30" id="dKr-bd-Ebl"/>
-                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="top" secondItem="UNw-vh-3pp" secondAttribute="bottom" constant="8" symbolic="YES" id="eRR-lE-GsJ"/>
-                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="height" secondItem="UNw-vh-3pp" secondAttribute="height" id="hdV-Ni-Iw1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZU-Bj-kDO" secondAttribute="trailing" constant="30" id="xdq-7B-u4z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UNw-vh-3pp" secondAttribute="trailing" constant="30" id="7Kh-xO-3be"/>
+                            <constraint firstItem="UNw-vh-3pp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="ElZ-bb-WAR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FZU-Bj-kDO" secondAttribute="bottom" constant="20" id="MWS-lV-3z3"/>
+                            <constraint firstItem="UNw-vh-3pp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="S3F-cU-Kda"/>
+                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WKh-ye-seL"/>
+                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="height" secondItem="UNw-vh-3pp" secondAttribute="height" id="qKA-3w-XtC"/>
+                            <constraint firstItem="FZU-Bj-kDO" firstAttribute="top" secondItem="UNw-vh-3pp" secondAttribute="bottom" constant="10" id="u7B-IF-xN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZU-Bj-kDO" secondAttribute="trailing" constant="30" id="vRX-wp-m7H"/>
                         </constraints>
                     </view>
                 </viewController>
